@@ -1,1 +1,56 @@
-<p>footer works!</p>
+<footer class="bg-primary   text-white  ">
+    <div class="block sm:flex  justify-around  items-center ">
+
+        <img class="sm:hidden block mx-auto" src="/logo.png" alt="logo">
+        <img class="sm:block xl:hidden hidden" src="/logoM.png" alt="logo">
+        <img class="xl:block hidden" src="/logo.png" alt="logo">
+
+        <!-- drop down -->
+        <div  class="drop-down-menu" (click)="onShowDropMenu()">
+            <button class=" text-2xl font-semibold">Quick links</button>
+            <img src="/aroicon.svg" alt="aroicon">
+        </div>
+        @if(showDropDown !== false ){
+        <div class="font-[Roboto] bg-white text-secondary  rounded-lg m-4">
+            <ul class="font-medium text-[16px]">
+                <li class="drop-down-items"><a href="">Privacy Policy</a></li>
+                <li class="drop-down-items"><a href="">Out of Warrenty</a></li>
+                <li class="drop-down-items"><a href="">Terms of Sale</a></li>
+                <li class="p-3 pl-10"><a href="">Term of Services</a></li>
+            </ul>
+        </div>
+        }
+
+        <div class="sm:block hidden">
+            <h1 class="font-[Kodchasan] font-semibold text-[25px] xl:text-[35px] ">Quick lins</h1>
+            <div class="font-[Roboto] mt-1">
+                <ul class="font-medium text-[14px] xl:[18px]">
+                    <li class="items"><a href="">Privacy Policy</a></li>
+                    <li class="items"><a href="">Out of Warrenty</a></li>
+                    <li class="items"><a href="">Terms of Sale</a></li>
+                    <li class="items"><a href="">Term of Services</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="connact-info">
+            <h1 class="heading sm:text-[25px] xl:[35px]">Contact Us</h1>
+            <div class="sm:ml-0 ml-[32px] mt-4 font-[Roboto]">
+                <div class="flex gap-[10px]">
+                    <img src="/whatsAppIcon.svg" alt="whatsAppIcon">
+                    <span class="font-normal text-[14px] xl:text-[18px]">+91 91730 40280</span>
+                </div>
+                <div class="flex gap-[10px] mt-3">
+                    <img src="/emailIcon.svg" alt="emailIcon">
+                    <span class="font-normal text-[14px] xl:text-[18px]">info&#64;e-willow.com</span>
+                </div>
+                <div class="flex gap-[10px] mt-3">
+                    <img src="/locationIcon.svg" alt="locationIcon">
+                    <span class="text-xs xl:[15px] font-normal">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copywrite">© Copyrights 2024. All rights reserved.</p>
+</footer>

@@ -1,9 +1,9 @@
 .hero-section {
-  @apply bg-[url('/assets/home/hero-home.svg')] bg-cover w-screen bg-no-repeat h-[135px] flex items-center relative;
+  @apply bg-[url('/assets/home/hero-home.png')] bg-cover bg-center w-screen bg-no-repeat h-[30vw] flex items-center relative;
 }
 
 .hero-text {
-  @apply italic font-bold text-white ml-[30px] max-w-[114px];
+  @apply italic font-bold lg:text-[36px] lg:leading-[34.7px] xl:text-[50px] xl:leading-[60px] text-white  max-w-[114px] lg:max-w-[258px] xl:max-w-[350px];
 }
 
 .flex-class-col {
@@ -11,9 +11,37 @@
 }
 
 .discover-btn {
-  @apply mt-5 bg-[#002982] hover:bg-[#002982] text-white text-[6px] font-bold h-[22px] w-[70px];
+  @apply mt-5 bg-[#002982] hover:bg-[#002982] text-white text-[6px]  lg:text-[14px] xl:text-[20px] font-bold py-1 px-2 lg:py-3 lg:px-5 rounded;
 }
 
 .main-smart {
-  @apply *:px-6 *:w-full mt-[30px]  *:bg-[#002982]/70 text-white *:pt-[26px] bg-[url('/assets/home/smart-bg.jpg')] bg-cover bg-no-repeat w-full h-full flex items-center;
+  @apply *:px-6 *:lg:px-[70px] *:w-full mt-[30px]  *:bg-[#002982]/70 text-white *:pt-[26px] bg-[url('/assets/home/smart-bg.jpg')] bg-center bg-cover bg-no-repeat w-full h-full flex items-center;
+}
+
+.hero-btn {
+  @apply bg-white text-[6px] lg:text-[12px] xl:text-[15px] px-2 py-1 lg:px-3 lg:py-2 xl:px-5 xl:py-3 rounded-[1px] lg:mt-5 xl:mt-7 lg:rounded;
+}
+
+.section1 {
+  @apply mt-5 lg:flex justify-between lg:px-[76px] lg:w-full lg:relative;
+}
+.section1-in {
+  @apply px-[85px] lg:max-w-[440px] xl:max-w-[600px] lg:px-0 relative flex-class-col lg:order-1 lg:w-[70%];
+}
+.section1-in h2 {
+  @apply text-center text-[#002981] text-[15px] lg:text-[28px] xl:text-[40px] font-bold mt-5;
+}
+.section1-in p {
+  @apply text-center text-[#002981] text-[9px] lg:text-[14px] xl:text-[20px] mt-1 xl:mt-3 xl:mb-2;
+}
+
+.why-chose-ul {
+  @apply list-disc font-semibold lg:font-normal text-[10px] lg:text-[14px] xl:text-[20px] mt-3 flex flex-wrap lg:flex-col lg:items-start items-center gap-x-8 text-nowrap;
+}
+.view-more-btn {
+  @apply px-3 py-1 lg:px-6 lg:py-2 border border-white rounded-[1.81px] lg:rounded text-[7.28px] lg:text-[14px];
+}
+
+.about-us-data {
+  @apply max-w-[300px] lg:max-w-[unset] lg:w-full p-[40px] lg:py-5 lg:px-2 xl:px-5 lg:h-[260px] xl:h-[365px] flex flex-col justify-center items-center border border-[#002982] rounded-[4.5px];
 }
