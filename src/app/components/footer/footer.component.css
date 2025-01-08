@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.drop-down-menu {
+  @apply sm:hidden  flex   justify-between items-center mx-7;
+  font-family: "Kodchasan", serif;
+}
+
+.drop-down-items {
+  @apply border-[#002982] border-b p-3 pl-10;
+}
+
+.items {
+  @apply py-1;
+}
+.heading {
+  @apply text-2xl  font-semibold ml-[30px] sm:ml-0 mt-2;
+  font-family: "Kodchasan", serif;
+}
+
+.copywrite {
+  @apply font-[Roboto]  text-center text-[14px] font-medium mt-5 pb-2;
+}
