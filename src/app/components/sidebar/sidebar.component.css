@@ -11,7 +11,7 @@
 }
 
 .sidebar-overlay {
-  @apply fixed inset-0 bg-black bg-opacity-80 z-40;
+  @apply bg-black bg-opacity-0 z-40;
 }
 
 .sidebar {

@@ -1,9 +1,9 @@
 .hero-section {
-  @apply bg-[url('/assets/home/hero-home.svg')] bg-cover w-screen bg-no-repeat h-[135px] flex items-center relative;
+  @apply bg-[url('/assets/home/hero-home.png')] bg-cover bg-center w-screen bg-no-repeat h-[30vw] flex items-center relative;
 }
 
 .hero-text {
-  @apply italic font-bold text-white ml-[30px] max-w-[114px];
+  @apply italic font-bold lg:text-[36px] lg:leading-[34.7px] xl:text-[50px] xl:leading-[60px] text-white  max-w-[114px] lg:max-w-[258px] xl:max-w-[350px];
 }
 
 .flex-class-col {
@@ -11,9 +11,9 @@
 }
 
 .discover-btn {
-  @apply mt-5 bg-[#002982] hover:bg-[#002982] text-white text-[6px] font-bold h-[22px] w-[70px];
+  @apply mt-5 bg-[#002982] hover:bg-[#002982] text-white text-[6px]  lg:text-[14px] xl:text-[20px] font-bold py-1 px-2 lg:py-3 lg:px-5 rounded;
 }
 
 .main-smart {
-  @apply *:px-6 *:w-full mt-[30px]  *:bg-[#002982]/70 text-white *:pt-[26px] bg-[url('/assets/home/smart-bg.jpg')] bg-cover bg-no-repeat w-full h-full flex items-center;
+  @apply *:px-6 *:lg:px-[70px] *:w-full mt-[30px]  *:bg-[#002982]/70 text-white *:pt-[26px] bg-[url('/assets/home/smart-bg.jpg')] bg-center bg-cover bg-no-repeat w-full h-full flex items-center;
 }
