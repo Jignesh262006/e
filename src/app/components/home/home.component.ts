@@ -5,7 +5,7 @@ import { SidebarComponent } from "../sidebar/sidebar.component";
 
 @Component({
   selector: 'app-home',
-  imports: [NgFor, NgIf, SidebarComponent],
+  imports: [NgFor, NgIf],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -5,8 +5,7 @@
             Smart Devices Smarter
             Future
         </h2>
-        <button
-            class="bg-white text-[6px] lg:text-[12px] xl:text-[15px] px-2 py-1 lg:px-3 lg:py-2 xl:px-5 xl:py-3 rounded-[1px] lg:mt-5 xl:mt-7 lg:rounded">Discover
+        <button class="hero-btn">Discover
             More</button>
     </div>
     <div class="absolute right-2 bottom-5">
@@ -15,15 +14,15 @@
 </div>
 
 <!-- 1st section -->
-<div class="mt-5 lg:flex justify-between lg:px-[76px] lg:w-full lg:relative">
+<div class="section1">
     <div class="flex-class-col lg:order-2 lg:w-[30%]">
         <img src="/assets/home/img-man.svg" class="w-[159px] lg:w-[306px] xl:w-[430px]" alt="man-img">
     </div>
-    <div class="px-[85px] lg:max-w-[440px] xl:max-w-[600px] lg:px-0 relative flex-class-col lg:order-1 lg:w-[70%]">
-        <h2 class="text-center text-[#002981] text-[15px] lg:text-[28px] xl:text-[40px] font-bold mt-5">
+    <div class="section1-in">
+        <h2>
             Smart Devices Smarter Future
         </h2>
-        <p class="text-center text-[#002981] text-[9px] lg:text-[14px] xl:text-[20px] mt-1 xl:mt-3 xl:mb-2">
+        <p class="">
             Empowering Your Future with Smart Technology or you can say Unlock a Smarter Tomorrow with Our Innovative
             Smart Devices. This version emphasizes the impact your products will have on the customer’s future, while
             highlighting the role of smart technology in that transformation.
@@ -97,8 +96,7 @@
             </div>
             <div class="lg:mt-4 xl:mt-6">
                 <h2 class="font-bold text-[12px] lg:text-[22px] xl:text-[30px]">Why Choose Us?</h2>
-                <ul
-                    class="list-disc font-semibold lg:font-normal text-[10px] lg:text-[14px] xl:text-[20px] mt-3 flex flex-wrap lg:flex-col lg:items-start items-center gap-x-8 text-nowrap">
+                <ul class="why-chose-ul">
                     <li>
                         App Control
                     </li>
@@ -117,8 +115,7 @@
                 </ul>
             </div>
             <div class="text-center lg:text-start mt-6 mb-4">
-                <button
-                    class="px-3 py-1 lg:px-6 lg:py-2 border border-white rounded-[1.81px] lg:rounded text-[7.28px] lg:text-[14px]">View
+                <button class="view-more-btn">View
                     More</button>
             </div>
         </div>
@@ -166,8 +163,7 @@
     <h2 class="text-[15px] font-bold my-[26px] lg:mt-[40px] lg:text-[32px] xl:text-[45px]">About Us</h2>
 
     <div class="flex flex-col items-center justify-center gap-y-[18px] lg:gap-x-4 lg:flex-row">
-        <div
-            class="max-w-[300px] lg:max-w-[unset] lg:w-full p-[40px] lg:py-5 lg:px-2 xl:px-5 lg:h-[260px] xl:h-[365px] flex flex-col justify-center items-center border border-[#002982] rounded-[4.5px]">
+        <div class="about-us-data">
             <img src="/assets/home/mession.svg" alt="mission">
             <h2 class="font-bold text-[22px] xl:text-[28px]">Our Mission</h2>
             <p class="text-[12px] text-center pt-3 xl:text-base">Our mission is to empower individuals and businesses by
@@ -179,8 +175,7 @@
             </p>
             <strong class="text-[12px] font-bold xl:text-base">Read More</strong>
         </div>
-        <div
-            class="max-w-[300px] lg:max-w-[unset] lg:w-full p-[40px] lg:py-5 lg:px-2 xl:px-5 lg:h-[260px] xl:h-[365px] flex flex-col justify-center items-center border border-[#002982] rounded-[4.5px]">
+        <div class="about-us-data">
             <img src="/assets/home/history.svg" alt="mission">
             <h2 class="font-bold text-[22px]  xl:text-[28px]">History</h2>
             <p class="text-[12px] text-center pt-3  xl:text-base">Our mission is to empower individuals and businesses
@@ -192,8 +187,7 @@
             </p>
             <strong class="text-[12px] font-bold  xl:text-base">Read More</strong>
         </div>
-        <div
-            class="max-w-[300px] lg:max-w-[unset] lg:w-full p-[40px] lg:py-5 lg:px-2 xl:px-5 lg:h-[260px] xl:h-[365px] flex flex-col justify-center items-center border border-[#002982] rounded-[4.5px]">
+        <div class="about-us-data">
             <img src="/assets/home/power.svg" alt="mission">
             <h2 class="font-bold text-[22px]  xl:text-[28px] text-center">Empowering a
                 Smarter Future</h2>
@@ -240,7 +234,7 @@
 
 <!-- FAQs -->
 
-<div class="px-[30px] lg:px-[70px] xl:px-[100px] mt-[48px] text-[#002981]">
+<div class="px-[30px] lg:px-[70px] xl:px-[100px] mt-[48px] text-[#002981] mb-5 lg:mb-10">
     <h2 class="font-bold text-[15px] lg:text-[32px] xl:text-[45px] lg:mb-4">FAQs</h2>
     <div class="flex flex-col justify-center items-center">
         <div *ngFor="let faq of faqs; let i = index"
