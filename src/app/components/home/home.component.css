@@ -1,0 +1,19 @@
+.hero-section {
+  @apply bg-[url('/assets/home/hero-home.svg')] bg-cover w-screen bg-no-repeat h-[135px] flex items-center relative;
+}
+
+.hero-text {
+  @apply italic font-bold text-white ml-[30px] max-w-[114px];
+}
+
+.flex-class-col {
+  @apply flex flex-col items-center justify-center;
+}
+
+.discover-btn {
+  @apply mt-5 bg-[#002982] hover:bg-[#002982] text-white text-[6px] font-bold h-[22px] w-[70px];
+}
+
+.main-smart {
+  @apply *:px-6 *:w-full mt-[30px]  *:bg-[#002982]/70 text-white *:pt-[26px] bg-[url('/assets/home/smart-bg.jpg')] bg-cover bg-no-repeat w-full h-full flex items-center;
+}
