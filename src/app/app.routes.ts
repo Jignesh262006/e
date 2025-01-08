@@ -8,8 +8,5 @@ export const routes: Routes = [
         path: '',
         component: HomeComponent
     },
-    {
-        path: 'sidebar',
-        component: SidebarComponent
-    }
+
 ];
