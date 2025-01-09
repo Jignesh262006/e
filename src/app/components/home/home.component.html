@@ -8,9 +8,7 @@
         <button class="hero-btn">Discover
             More</button>
     </div>
-    <div class="absolute right-2 bottom-5">
-        <img src="/assets/home/wa.png" class="w-[16.8px] lg:w-[60px] xl:w-[76px]" alt=" whatsapp">
-    </div>
+
 </div>
 
 <!-- 1st section -->
@@ -46,7 +44,8 @@
             <div class="max-w-[354px] lg:max-w-[540px]">
                 <div>
                     <h2 class="text-[15px] lg:text-[28px] xl:text-[36px] font-bold">Best in E-willow smart system</h2>
-                    <p class="text-[9px] lg:text-[12px] mt-[11px] xl:text-base">Upgrade your Home/Office with our range of
+                    <p class="text-[9px] lg:text-[12px] mt-[11px] xl:text-base">Upgrade your Home/Office with our range
+                        of
                         advanced smart devices,
                         including
                         smart sensors,
@@ -174,7 +173,9 @@
         <div class="about-us-data">
             <img src="/assets/home/history.svg" alt="mission">
             <h2 class="font-bold text-[22px]  xl:text-[28px]">History</h2>
-            <p class="text-[12px] text-center pt-3  xl:text-base">Our journey began with a vision to bring smart technology to India, founded on extensive  research and deep insights gained from observing the rapid growth of tech industries in  other countries...
+            <p class="text-[12px] text-center pt-3  xl:text-base">Our journey began with a vision to bring smart
+                technology to India, founded on extensive research and deep insights gained from observing the rapid
+                growth of tech industries in other countries...
             </p>
             <strong class="text-[12px] font-bold  xl:text-base">Read More</strong>
         </div>
@@ -227,47 +228,38 @@
 <div class="get-in-main">
     <h2 class="get-in-h2">Get In Touch
     </h2>
-    <div
-        class="get-in-team">
-        <div
-            class="get-in-teamz">
+    <div class="get-in-team">
+        <div class="get-in-teamz">
             <div>
                 <p class="get-suppot-p max-w-[80%]">If you have any query, our
                     support team is ready to solution for all your query.</p>
                 <div class="xl:mt-[52px] lg:mt-[33px] mt-[17px]">
                     <div class="flex items-center ">
-                        <img class="get-in-img"
-                            src="/whatsapp-icon.svg" alt="">
+                        <img class="get-in-img" src="/whatsapp-icon.svg" alt="">
                         <p>+91 91730 40280</p>
                     </div>
                     <div class="flex items-center xl:mt-5 lg:mt-[14.25px] mt-[6px]">
-                        <img class="get-in-img"
-                            src="/mail-icon.svg" alt="">
+                        <img class="get-in-img" src="/mail-icon.svg" alt="">
                         <p>info&#64;e-willow.com</p>
                     </div>
                     <div class="flex items-center xl:mt-5 lg:mt-[14.25px] mt-[6px]">
-                        <img class="get-in-img"
-                            src="/map-icon.svg" alt="">
+                        <img class="get-in-img" src="/map-icon.svg" alt="">
                         <p>India</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="lg:w-[45%] w-full px-[21px] lg:px-0 mt-[24.5px] lg:mt-0 ">
-            <div
-                class="get-in-name">
+            <div class="get-in-name">
                 <input class="outline-none w-full" type="text" placeholder="Name">
             </div>
-            <div
-                class="get-in-mail">
+            <div class="get-in-mail">
                 <input class="outline-none w-full" type="text" placeholder="Email">
             </div>
-            <div
-                class="get-in-msg">
+            <div class="get-in-msg">
                 <input class="outline-none h-14 w-full" type="text" placeholder="Message">
             </div>
-            <button
-                class="get-in-btn">Send</button>
+            <button class="get-in-btn">Send</button>
         </div>
     </div>
 </div>
@@ -277,24 +269,24 @@
 <!-- FAQs -->
 
 <div class="px-[30px] lg:px-[70px] xl:px-[100px] mt-[48px] text-[#002981] mb-5 lg:mb-10">
-  <h2 class="font-bold text-[15px] lg:text-[32px] xl:text-[45px] lg:mb-4">FAQs</h2>
-  <div class="flex flex-col w-full">
-    <div *ngFor="let faq of faqs; let i = index" class="border-b last:border-b-0">
-      <!-- Question -->
-      <button class="w-full flex items-center justify-between py-2 lg:py-4 focus:outline-none"
-              (click)="toggleFAQ(i)">
-        <span class="text-[10px] text-left lg:text-[18px] xl:text-[26px]">{{ faq.question }}</span>
-        <!-- Plus/Minus Image -->
-        <img *ngIf="activeFAQ === i" src="assets/home/minus.svg" alt="Minus"
-             class="ml-auto transition-transform transform lg:w-[22px]" />
-        <img *ngIf="activeFAQ !== i" src="assets/home/plus.svg" alt="Plus"
-             class="ml-auto transition-transform transform lg:w-[22px]" />
-      </button>
+    <h2 class="font-bold text-[15px] lg:text-[32px] xl:text-[45px] lg:mb-4">FAQs</h2>
+    <div class="flex flex-col w-full">
+        <div *ngFor="let faq of faqs; let i = index" class="border-b last:border-b-0">
+            <!-- Question -->
+            <button class="w-full flex items-center justify-between py-2 lg:py-4 focus:outline-none"
+                (click)="toggleFAQ(i)">
+                <span class="text-[10px] text-left lg:text-[18px] xl:text-[26px]">{{ faq.question }}</span>
+                <!-- Plus/Minus Image -->
+                <img *ngIf="activeFAQ === i" src="assets/home/minus.svg" alt="Minus"
+                    class="ml-auto transition-transform transform lg:w-[22px]" />
+                <img *ngIf="activeFAQ !== i" src="assets/home/plus.svg" alt="Plus"
+                    class="ml-auto transition-transform transform lg:w-[22px]" />
+            </button>
 
-      <!-- Answer -->
-      <div *ngIf="activeFAQ === i" class="overflow-hidden transition-all duration-300 ease-in-out">
-        <p class="py-2 text-[10px] lg:text-[17px] xl:text-[23px]">{{ faq.answer }}</p>
-      </div>
+            <!-- Answer -->
+            <div *ngIf="activeFAQ === i" class="overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="py-2 text-[10px] lg:text-[17px] xl:text-[23px]">{{ faq.answer }}</p>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
