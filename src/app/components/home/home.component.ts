@@ -1,15 +1,18 @@
-import { NgFor, NgIf } from '@angular/common';
+import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { ToggleService } from '../../service/toggle.service';
 import { SidebarComponent } from "../sidebar/sidebar.component";
 
 @Component({
   selector: 'app-home',
-  imports: [NgFor, NgIf],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  seeMoreState = false
+  seeMoreState1 = false
+  seeMoreState2 = false
   faqs = [
     { question: 'What will be inside the Smart kit?', answer: 'The kit includes a combination of Smart retrofit switches, heavy-duty 16A smart\n' +
         'plug, and smart IR control hub depending on the type of kit selected to make your life\n' +
@@ -40,5 +43,19 @@ export class HomeComponent {
 
   toggleFAQ(index: number) {
     this.activeFAQ = this.activeFAQ === index ? null : index;
+  }
+
+  seeMore(name:any){
+  if(name === 1){
+    this.seeMoreState = !this.seeMoreState
+  }
+
+    if (name === 2) {
+      this.seeMoreState1 = !this.seeMoreState1
+    }
+
+    if (name === 3) {
+      this.seeMoreState2 = !this.seeMoreState2
+    }
   }
 }

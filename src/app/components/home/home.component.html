@@ -38,14 +38,14 @@
 
 <!-- 1st section -->
 <div class="section1">
-    <div class="flex-class-col lg:order-2 lg:w-[30%]">
+    <div class="flex-class-col lg:order-2 lg:w-[30%] lg:mr-[10%]">
         <img src="/assets/home/img-man.svg" class="w-[159px] lg:w-[306px] xl:w-[430px]" alt="man-img">
     </div>
     <div class="section1-in">
-        <h2>
+        <h2 class="text-nowrap">
             Smart Devices Smarter Future
         </h2>
-        <p class="">
+        <p class="text-justify">
             Empowering Your Future with Smart Technology or you can say Unlock a Smarter Tomorrow with Our Innovative
             Smart Devices. This version emphasizes the impact your products will have on the customer’s future, while
             highlighting the role of smart technology in that transformation.
@@ -56,8 +56,8 @@
         <button class="discover-btn">Discover
             More</button>
     </div>
-    <div class="absolute top-[25px] xl:top-[90px] left-0 bottom-0 hidden lg:block">
-        <img src="/assets/home/art.svg" class="w-[100px] xl:w-[114px]" alt="bg-text">
+    <div class="absolute  top-[25px] xl:top-[-30px] left-0 bottom-0 hidden lg:block">
+        <img src="/assets/home/art.svg" class="w-[100px] xl:h-[500px] xl:w-[300px]" alt="bg-text">
     </div>
 </div>
 
@@ -119,7 +119,7 @@
             </div>
             <div class="lg:mt-4 xl:mt-6 mb-4">
                 <h2 class="font-bold text-[12px] lg:text-[22px] xl:text-[30px]">Why Choose Us?</h2>
-                <ul class="why-chose-ul pl-[4px]">
+                <ul class="why-chose-ul pl-[4px] xl:pl-[22px]">
                     <li>
                         App Control
                     </li>
@@ -183,36 +183,67 @@
     <h2 class="text-[15px] font-bold my-[26px] lg:mt-[40px] lg:text-[32px] xl:text-[45px]">About Us</h2>
 
     <div class="flex flex-col items-center justify-center gap-y-[18px] lg:gap-x-4 lg:flex-row">
-        <div class="about-us-data">
+        <div class="about-us-data " [ngClass]="{'!h-fit':seeMoreState}">
             <img src="/assets/home/mession.svg" alt="mission">
             <h2 class="font-bold text-[22px] xl:text-[28px]">Our Mission</h2>
-            <p class="text-[12px] text-center pt-3 xl:text-base">Our mission is to empower individuals and businesses by
+            <p class="text-[12px] text-center h-[132px] pt-3 xl:text-base overflow-hidden"
+                [ngClass]="{'!h-fit':seeMoreState}">Our mission is to empower individuals
+                and businesses by
                 providing
                 innovative smart
                 gadgets, seamless software solutions, and expert support to help them embrace and thrive in a smarter,
                 more
                 connected future....
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta
+                nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
             </p>
-            <strong class="text-[12px] font-bold xl:text-base">Read More</strong>
+
+            <strong class="text-[12px] font-bold xl:text-base" (click)="seeMore(1)">Read More</strong>
         </div>
-        <div class="about-us-data">
+        <div class="about-us-data" [ngClass]="{'!h-fit':seeMoreState1}">
             <img src="/assets/home/history.svg" alt="mission">
             <h2 class="font-bold text-[22px]  xl:text-[28px]">History</h2>
-            <p class="text-[12px] text-center pt-3  xl:text-base">Our journey began with a vision to bring smart
+            <p class="text-[12px] text-center overflow-hidden pt-3 h-[132px]  xl:text-base"
+                [ngClass]="{'!h-fit':seeMoreState1}">Our
+                journey began with a vision to bring smart
                 technology to India, founded on extensive research and deep insights gained from observing the rapid
                 growth of tech industries in other countries...
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta
+                nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
             </p>
-            <strong class="text-[12px] font-bold  xl:text-base">Read More</strong>
+            <strong class="text-[12px] font-bold  xl:text-base" (click)="seeMore(2)">Read More</strong>
         </div>
-        <div class="about-us-data">
+        <div class="about-us-data" [ngClass]="{'!h-fit':seeMoreState2}">
             <img src="/assets/home/power.svg" alt="mission">
             <h2 class="font-bold text-[22px]  xl:text-[28px] text-center">Empowering a
                 Smarter Future</h2>
-            <p class="text-[12px] text-center pt-3  xl:text-base">Since launching, we’ve steadily grown, gaining
+            <p class="text-[12px] text-center pt-3 overflow-hidden xl:text-base h-[132px]"
+                [ngClass]="{'!h-fit':seeMoreState2}">Since
+                launching, we’ve steadily grown, gaining
                 recognition for our
                 commitment to quality and accessibility. Our products have already begun making a positive
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta
+                nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse unde laboriosam id soluta! Officiis magni
+                quisquam soluta
+                nisi laborum omnis quidem est, architecto saepe itaque unde porro mollitia expedita rem!
             </p>
-            <strong class="text-[12px] font-boldv xl:text-base">Read More</strong>
+            <strong class="text-[12px] font-boldv xl:text-base" (click)="seeMore(3)">Read More</strong>
         </div>
     </div>
 
@@ -309,8 +340,8 @@
             </button>
 
             <!-- Answer -->
-            <div *ngIf="activeFAQ === i" class="overflow-hidden transition-all duration-300 ease-in-out">
-                <p class="py-2 text-[10px] lg:text-[17px] xl:text-[23px]">{{ faq.answer }}</p>
+            <div *ngIf="activeFAQ === i" class="overflow-hidden transition-all duration-300 ease-in-out ">
+                <p class="py-2 text-black text-[10px] lg:text-[17px] xl:text-[23px]">{{ faq.answer }}</p>
             </div>
         </div>
     </div>
