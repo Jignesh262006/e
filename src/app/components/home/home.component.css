@@ -3,7 +3,7 @@
 }
 
 .hero-text {
-  @apply italic font-bold lg:text-[36px] lg:leading-[34.7px] xl:text-[50px] xl:leading-[60px] text-white  max-w-[114px] lg:max-w-[258px] xl:max-w-[350px];
+  @apply italic font-bold lg:text-[36px] lg:leading-[34.7px] xl:text-[50px] xl:leading-[60px] text-white;
 }
 
 .flex-class-col {
