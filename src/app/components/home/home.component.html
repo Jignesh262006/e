@@ -286,28 +286,24 @@
 <!-- FAQs -->
 
 <div class="px-[30px] lg:px-[70px] xl:px-[100px] mt-[48px] text-[#002981] mb-5 lg:mb-10">
-    <h2 class="font-bold text-[15px] lg:text-[32px] xl:text-[45px] lg:mb-4">FAQs</h2>
-    <div class="flex flex-col justify-center items-center">
-        <div *ngFor="let faq of faqs; let i = index"
-            class="border-b last:border-b-0 flex flex-col justify-between w-full">
-            <!-- Question -->
-            <button class="w-full flex items-center justify-between py-2 lg:py-4 focus:outline-none"
-                (click)="toggleFAQ(i)">
-                <span class="text-[10px] lg:text-[18px] xl:text-[26px]">{{ faq.question }}</span>
-                <!-- Plus/Minus Image -->
-                <img *ngIf="activeFAQ === i" src="assets/home/minus.svg" alt="Minus"
-                    class=" transition-transform transform lg:w-[22px]" />
-                <img *ngIf="activeFAQ !== i" src="assets/home/plus.svg" alt="Plus"
-                    class=" transition-transform transform lg:w-[22px]" />
-            </button>
+  <h2 class="font-bold text-[15px] lg:text-[32px] xl:text-[45px] lg:mb-4">FAQs</h2>
+  <div class="flex flex-col w-full">
+    <div *ngFor="let faq of faqs; let i = index" class="border-b last:border-b-0">
+      <!-- Question -->
+      <button class="w-full flex items-center justify-between py-2 lg:py-4 focus:outline-none"
+              (click)="toggleFAQ(i)">
+        <span class="text-[10px] text-left lg:text-[18px] xl:text-[26px]">{{ faq.question }}</span>
+        <!-- Plus/Minus Image -->
+        <img *ngIf="activeFAQ === i" src="assets/home/minus.svg" alt="Minus"
+             class="ml-auto transition-transform transform lg:w-[22px]" />
+        <img *ngIf="activeFAQ !== i" src="assets/home/plus.svg" alt="Plus"
+             class="ml-auto transition-transform transform lg:w-[22px]" />
+      </button>
 
-            <!-- Answer -->
-            <div class="overflow-hidden transition-all duration-300 ease-in-out" [class.max-h-0]="activeFAQ !== i"
-                [class.max-h-screen]="activeFAQ === i">
-                <p class="p-2 text-[10px] lg:text-[17px] xl:text-[23px]">{{ faq.answer }}</p>
-            </div>
-        </div>
-
-
+      <!-- Answer -->
+      <div *ngIf="activeFAQ === i" class="overflow-hidden transition-all duration-300 ease-in-out">
+        <p class="py-2 text-[10px] lg:text-[17px] xl:text-[23px]">{{ faq.answer }}</p>
+      </div>
     </div>
+  </div>
 </div>
