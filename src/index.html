@@ -5,12 +5,35 @@
   <meta charset="utf-8">
   <title>E-Willow</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
   <link rel="icon" type="image/x-icon" href="logo-i.png">
 </head>
 
 <body>
   <app-root></app-root>
+
+  <script defer>
+    document.addEventListener("gesturestart", function (e) {
+      e.preventDefault();
+    });
+    document.addEventListener(
+      "touchmove",
+      function (event) {
+        event.preventDefault();
+      },
+      false,
+    );
+
+    document.addEventListener(
+      "dblclick",
+      function (event) {
+        event.preventDefault();
+      },
+      { passive: false },
+    );
+  </script>
 </body>
 
 </html>
