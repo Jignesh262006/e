@@ -1,5 +1,5 @@
 .hero-section {
-  @apply bg-[url('/assets/home/hero-home.png')] bg-cover bg-center w-screen bg-no-repeat h-[35vw] flex items-center relative;
+  @apply bg-[url('/bggg.png')] bg-cover bg-center w-screen bg-no-repeat h-[35vw] flex items-center relative;
 }
 
 .hero-text {
