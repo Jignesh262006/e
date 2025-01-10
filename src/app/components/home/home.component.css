@@ -43,7 +43,7 @@
 }
 
 .about-us-data {
-  @apply max-w-[300px] lg:max-w-[unset] lg:w-full p-[40px] lg:py-5 lg:px-2 xl:px-5 lg:h-[260px] xl:h-[365px] flex flex-col justify-center items-center border border-[#002982] rounded-[4.5px];
+  @apply max-w-[300px] lg:max-w-[unset] lg:w-full p-[40px] lg:py-5 lg:px-2 xl:px-5 flex flex-col justify-center items-center border border-[#002982] rounded-[4.5px];
 }
 
 .custom-shadow {
