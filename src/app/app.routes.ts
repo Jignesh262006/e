@@ -32,5 +32,33 @@ export const routes: Routes = [
         path: 'about-us',
         component: UnderDevelopmentComponent
     },
+    {
+        path: 'partner',
+        component: UnderDevelopmentComponent
+    },
+    {
+        path: 'support',
+        component: UnderDevelopmentComponent
+    },
+    {
+        path: 'my-account',
+        component: UnderDevelopmentComponent
+    },
+    {
+        path: 'installation',
+        component: UnderDevelopmentComponent
+    },
+    {
+        path: 'privacy-policy',
+        component: UnderDevelopmentComponent
+    },
+    {
+        path: 'warranty',
+        component: UnderDevelopmentComponent
+    },
+    {
+        path: 'terms-sale',
+        component: UnderDevelopmentComponent
+    },
 
 ];
