@@ -81,3 +81,14 @@
 .get-in-btn {
   @apply xl:h-[50px] lg:h-[35.6px] h-[31.2px] bg-[#002982] rounded-sm font-bold lg:text-[15px] xl:text-[20px] text-white lg:px-[22px] px-[20px] xl:px-[40px] lg:mt-[18px] xl:mt-[25px] mt-[15px];
 }
+
+@keyframes pingg {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.animate-pingg {
+  animation: pingg 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
