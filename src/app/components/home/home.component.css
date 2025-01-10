@@ -3,7 +3,7 @@
 }
 
 .hero-text {
-  @apply italic font-bold lg:text-[36px] lg:leading-[34.7px] xl:text-[50px] xl:leading-[60px] text-white;
+  @apply italic font-bold text-sm lg:text-[36px] lg:leading-[34.7px] xl:text-[50px] xl:leading-[60px] text-white;
 }
 
 .flex-class-col {
@@ -11,7 +11,7 @@
 }
 
 .discover-btn {
-  @apply mt-5 bg-[#002982] hover:bg-[#002982] text-white text-[6px]  lg:text-[14px] xl:text-[20px] font-bold py-1 px-2 lg:py-3 lg:px-5 rounded;
+  @apply hidden lg:block mt-5 bg-[#002982] hover:bg-[#002982] text-white text-[6px]  lg:text-[14px] xl:text-[20px] font-bold py-1 px-2 lg:py-3 lg:px-5 rounded;
 }
 
 .main-smart {
@@ -32,11 +32,11 @@
   @apply text-center text-[#002981] text-[15px] lg:text-[28px] xl:text-[40px] font-bold mt-5;
 }
 .section1-in p {
-  @apply text-center text-[#002981] text-[9px] lg:text-[14px] xl:text-[20px] mt-1 xl:mt-3 xl:mb-2;
+  @apply text-justify text-[#002981] text-[9px] lg:text-[14px] xl:text-[20px] mt-3 xl:mt-3 xl:mb-2;
 }
 
 .why-chose-ul {
-  @apply list-disc font-semibold lg:font-normal text-[10px] lg:text-[14px] xl:text-[20px] mt-3 flex flex-wrap lg:flex-col lg:items-start items-center gap-x-8 text-nowrap;
+  @apply list-disc pl-[4px] xl:pl-[33px] font-semibold justify-center lg:justify-start lg:font-normal text-[10px] lg:text-[14px] xl:text-[20px] mt-3 flex flex-wrap lg:flex-col lg:items-start items-center gap-x-8 text-nowrap;
 }
 .view-more-btn {
   @apply px-3 py-1 lg:px-6 lg:py-2 border border-white rounded-[1.81px] lg:rounded text-[7.28px] lg:text-[14px];
